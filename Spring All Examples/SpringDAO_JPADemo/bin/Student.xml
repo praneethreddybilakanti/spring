@@ -1,0 +1,20 @@
+<entity-mappings version="1.0"
+	xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm   
+        http://java.sun.com/xml/ns/persistence/orm_1_0.xsd ">
+
+	<entity class="Student">
+		<table name="student"></table>
+		<attributes>
+			<id name="sno">
+				<column name="sno" />
+			</id>
+			<basic name="name">
+				<column name="name" />
+			</basic>
+			<basic name="address">
+				<column name="address" />
+			</basic>
+		</attributes>
+	</entity>
+</entity-mappings>  

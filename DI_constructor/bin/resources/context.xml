@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="student" class="com.praneeth.Student">
+<constructor-arg name="id" value="100"></constructor-arg>
+<constructor-arg name="name" value="praneeth"></constructor-arg>
+<constructor-arg name="marks" value="980"></constructor-arg>
+</bean>
+<alias name="student" alias="s"/>
+</beans>

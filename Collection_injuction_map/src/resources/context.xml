@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="student" class="com.praneeth.Student">
+<property name="name" value="praneeth"></property>
+<property name="courses">
+<map>
+<entry key="1" value="c"></entry>
+<entry key="2" value="c++"></entry>
+<entry key="3" value="java"></entry>
+<entry key="4" value="python"></entry>
+
+<entry key="5" value="javascript"></entry>
+</map>
+
+
+
+</property>
+</bean>
+<alias name="student" alias="s"/>
+</beans>

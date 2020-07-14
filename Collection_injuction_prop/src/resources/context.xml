@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="student" class="com.praneeth.Student">
+<property name="sname" value="praneeth"></property>
+<property name="propt">
+<props>
+<prop key="connection">oralce.jdbc.driver.OracleDriver </prop>
+<prop key="url"> jdvc:oracle:thin:@localhost:1421:xe</prop>
+<prop key="username">system</prop>
+<prop key="password"> system</prop>
+</props>
+
+
+</property>
+</bean>
+<alias name="student" alias="s"/>
+</beans>

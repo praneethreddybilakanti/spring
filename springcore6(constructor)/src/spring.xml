@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="f" class="com.config.Friute">
+<constructor-arg type="String" value="big bazar"></constructor-arg>
+<constructor-arg type="java.util.List">
+<list>
+<value>banana</value>
+<value>apple</value>
+</list>
+
+</constructor-arg>
+</bean>
+
+
+
+</beans>

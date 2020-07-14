@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="ff1" class="com.config.FriuteFlaver">
+<constructor-arg name="name" value="apple" index="0"></constructor-arg>
+<constructor-arg name="color" value="red" index="1"></constructor-arg>
+</bean>
+<bean id="ff2" class="com.config.FriuteFlaver">
+<constructor-arg name="name" value="banana" index="0"></constructor-arg>
+<constructor-arg name="color" value="yellow" index="1"></constructor-arg>
+</bean>
+<bean id="f" class="com.config.Friute">
+<constructor-arg type="String" value="big bazar"></constructor-arg>
+<constructor-arg type="java.util.List">
+<list>
+<ref bean="ff1"/>
+<ref bean="ff2"/>
+</list>
+</constructor-arg>
+</bean>
+
+
+
+</beans>

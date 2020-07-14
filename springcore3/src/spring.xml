@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="add" class="com.config.Address">
+<property name="city" value="hyd"></property>
+<property name="state" value="telangana"></property>
+<property name="country" value="india"></property>
+
+</bean>
+<bean id="e" class="com.config.Employee">
+<property name="empno" value="101"></property>
+<property name="name" value="praneeth"></property>
+<property name="address">
+<!-- <bean class="com.config.Address"></bean> -->
+<ref bean="add"/>
+</property>
+</bean>
+
+
+
+</beans>

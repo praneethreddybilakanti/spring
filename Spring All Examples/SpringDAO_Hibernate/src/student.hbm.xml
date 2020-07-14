@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping SYSTEM
+"hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="smlcodes.Student" table="student">
+		<id name="sno">
+			<generator class="assigned"></generator>
+		</id>
+
+		<property name="name"></property>
+		<property name="address"></property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,11 @@
+0:0:0:0:0:0:0:1 - - [13/Sep/2017:18:57:50 +0530] "GET / HTTP/1.1" 404 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [13/Sep/2017:18:58:12 +0530] "GET /springrest/customers HTTP/1.1" 200 538 http-bio-8080-exec-2 320
+0:0:0:0:0:0:0:1 - - [13/Sep/2017:18:58:22 +0530] "GET /springrest/customers HTTP/1.1" 200 538 http-bio-8080-exec-3 8
+0:0:0:0:0:0:0:1 - - [13/Sep/2017:18:58:28 +0530] "GET /springrest/customers HTTP/1.1" 200 538 http-bio-8080-exec-5 7
+0:0:0:0:0:0:0:1 - - [13/Sep/2017:19:16:45 +0530] "GET /mvc/customers HTTP/1.1" 404 949 http-bio-8080-exec-1 166
+0:0:0:0:0:0:0:1 - - [13/Sep/2017:19:16:53 +0530] "GET /mvc/students HTTP/1.1" 200 160 http-bio-8080-exec-3 244
+0:0:0:0:0:0:0:1 - - [13/Sep/2017:19:39:30 +0530] "HEAD /mvc/students HTTP/1.1" 200 - http-bio-8080-exec-5 11
+0:0:0:0:0:0:0:1 - - [13/Sep/2017:19:39:31 +0530] "GET /mvc/students HTTP/1.1" 200 160 http-bio-8080-exec-7 6
+0:0:0:0:0:0:0:1 - - [13/Sep/2017:19:40:29 +0530] "HEAD /mvc/students/%7bid%7d HTTP/1.1" 400 - http-bio-8080-exec-6 66
+0:0:0:0:0:0:0:1 - - [13/Sep/2017:19:40:29 +0530] "GET /mvc/students/%7bid%7d HTTP/1.1" 400 968 http-bio-8080-exec-10 8
+0:0:0:0:0:0:0:1 - - [13/Sep/2017:19:40:40 +0530] "GET /mvc/students/201 HTTP/1.1" 200 58 http-bio-8080-exec-1 16
